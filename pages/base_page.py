@@ -1,12 +1,11 @@
 from selenium.webdriver.common.by import By
 
 
-class base_page_users:
+class BasePageUsers:
     username = "standard_user"
     password = "secre_sauce"
 
-class base_page_locators:
+class BasePageLocators:
     usname_field = (By.ID, 'user-name')
     psswod_field = (By.ID, 'password')
-    login_button - (By.ID, 'login-button')
-
+    login_button = (By.ID, 'login-button')
