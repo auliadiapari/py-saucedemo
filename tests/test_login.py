@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from pages.login_page import login_page
+from 
 
 login_page.go_to_page
 login_page.input_username
