@@ -1,10 +1,16 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from 
+from pages.login_page import LoginPage
 
-login_page.go_to_page
-login_page.input_username
-login_page.input_password
-login_page.click_login_button
-login_page.verify_home_page
-    
+
+class testLoginPage:
+
+    def testValidLogin(self):
+        LoginPage.go_to_page()
+        LoginPage.input_password()
+        LoginPage.input_password()
+        LoginPage.input_password()
+        LoginPage.click_login_button()
+        LoginPage.verify_home_page()
+
+testLoginPage.testValidLogin()
+        
+
