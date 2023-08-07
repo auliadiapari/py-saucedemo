@@ -1,8 +1,4 @@
-import time
-
 import pytest
-from selenium.webdriver.common.by import By
-
 from pages.base_page import BasePageLocators, BasePageUsers
 from pages.login_page import LoginPage
 
@@ -45,7 +41,3 @@ class TestLogin:
         LoginPage(self.driver).enter_password(BasePageUsers.ALL_USER_PASSWORD)
         LoginPage(self.driver).click_login_button()
         LoginPage(self.driver).verify_success_login()
-
-
-
-
